@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Calculator</h1>
+        <div id="month-display"></div>
+        <div class="input-section">
+            <label for="lectures-attended">Lectures Attended Today:</label>
+            <input type="number" id="lectures-attended" min="0" max="5" value="5">
+            <button id="add-attendance-btn">Add Attendance</button>
+        </div>
+        <div id="message-area"></div>
+        <div id="attendance-summary">
+            <h2>This Month's Summary</h2>
+            <p>Total Lectures: <span id="total-lectures">0</span></p>
+            <p>Attended Lectures: <span id="attended-lectures">0</span></p>
+            <p>Attendance Percentage: <span id="attendance-percentage">0</span>%</p>
+        </div>
+        <div id="attendance-history">
+            <h2>Daily Record</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
